@@ -11,11 +11,10 @@ end
 
   GET "/form" do
   session["form"] = "newForm"
-  @session = session
 		erb :index
 	end
 
-  POST "/form" do
+  POST "/checkout" do
     session["form"] = "newForm"
     @session = session
   		erb :index
