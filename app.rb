@@ -17,7 +17,7 @@ end
   	end
 
 
-    GET '/hey' do 
+    GET '/hey' do
   session["purchase"] = "item"
   @session = session
 end
