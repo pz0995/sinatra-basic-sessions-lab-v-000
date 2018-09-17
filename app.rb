@@ -10,7 +10,7 @@ class App < Sinatra::Base
 end
 
 get "/info" do
-		erb :info
+		erb :index
 	end
 
 end
