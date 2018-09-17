@@ -9,10 +9,15 @@ class App < Sinatra::Base
   set :session_secret, "secret"
 end
 
-get "/form" do
+  GET "/form" do
   session["form"] = "newForm"
   @session = session
 		erb :index
 	end
 
+  POST "/form" do
+    session["form"] = "newForm"
+    @session = session
+  		erb :index
+  	end
 end
