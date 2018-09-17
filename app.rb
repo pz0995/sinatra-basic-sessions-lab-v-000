@@ -8,9 +8,6 @@ end
 
   GET "/" do
   session["form"] = "newForm"
-  #renders a form to buy somethibng
-  if session[:lastname]
-		erb :item
 	end
 
   POST "/checkout" do
