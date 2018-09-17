@@ -9,14 +9,15 @@ class App < Sinatra::Base
   set :session_secret, "secret"
 end
 
-  GET "/form" do
+  GET "/" do
   session["form"] = "newForm"
-		erb :index
+  #renders a form to buy somethibng
+		erb :item
 	end
 
   POST "/checkout" do
+    return cart
     session["form"] = "newForm"
-    @session = session
   		erb :index
   	end
 end
